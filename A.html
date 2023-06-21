@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Resume</title>
+  <style>
+    body {
+      background-color: #000000;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+    }
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .profile {
+      text-align: center;
+    }
+    
+    .profile img {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      margin-bottom: 20px;
+    }
+    
+    .section {
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+    
+    .section:hover {
+      background-color: #111;
+    }
+    
+    .section h2 {
+      margin-bottom: 10px;
+      font-size: 24px;
+    }
+    
+    .section p {
+      margin-bottom: 5px;
+    }
+    
+    .section .details {
+      display: none;
+    }
+    
+    .section.active .details {
+      display: block;
+    }
+    
+    .section.active h2 {
+      color: #00adb5;
+    }
+    
+    .section .timeline {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    .section .timeline li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+    
+    .section .timeline li:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 10px;
+      width: 10px;
+      height: 10px;
+      background-color: #00adb5;
+      border-radius: 50%;
+    }
+    
+    .section .timeline .date {
+      font-size: 14px;
+      color: #999;
+    }
+    
+    .section .timeline .content {
+      margin-left: 15px;
+    }
+    
+    .section .description {
+      margin-top: 5px;
+      font-style: italic;
+      color: #ccc;
+    }
+    
+    .section .skills ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    
+    .section .skills li {
+      background-color: #222;
+      color: #fff;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+    
+    .section .contact {
+      font-size: 16px;
+      border-radius: 5px;
+      margin-right: 5px;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>RESUME</h1>
+    <div class="profile">
+      <img src="PHOTO.jpg" alt="Profile Picture">
+      <h2>J SAI VISHNU</h2>
+    </div>
+    
+    <div class="section" id="summary">
+      <h2>SUMMARY</h2>
+      <div class="details">
+        <p>B.Tech fresher completed with a major in Electronics and Communication Engineering. 
+           Seeking a challenging position in a reputed organization where I can learn new skills, expand my knowledge, and leverage my learnings</p>
+      </div>
+    </div>
+    
+    <div class="section" id="experience">
+      <h2>INTERNSHIP</h2>
+      <div class="details">
+        <ul class="timeline">
+          <li>
+            <div class="date">2021</div>
+            <div class="content">
+              <h3>HAL-HINDUSTAN AERONOTICS LIMITED</h3>
+              
+              <p class="description">I have undergone and completed an internship training at this prestigious PSU.
+                It was a great experience to undergo the internship at this prestigious PSU.
+                I believe that undertaking this internship training has served my purpose of getting practical experience and knowing industrial demands.
+                I have been exposed to not only just textbooks but also the real-time requirements of the industrial sector and how skillful engineers and technicians can connect the gap between what is there and what needs to be done.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="section" id="skills">
+      <h2>SKILLS</h2>
+      <div class="details">
+        <ul class="skills">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>JAVA</li>
+          <li>C PROGRAMMING</li>
+          <li>EMBEDDED SYSTEMS</li>
+          <li>DIGITAL ELECTRONICS</li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="section" id="education">
+      <h2>EDUCATION</h2>
+      <div class="details">
+        <ul class="timeline">
+          <li>
+            <div class="date">2017</div>
+            <div class="content">
+              <h3>CLASS 10</h3>
+              <p>SRI CHAITANYA TECHNO SCHOOL</p>
+              <p>CGPA: 9.8</p>
+            </div>
+          </li>
+          <li>
+            <div class="date">2019</div>
+            <div class="content">
+              <h3>PUC</h3>
+              <p>SADHANA PU AND DEGREE COLLEGE</p>
+              <p>PERCENTAGE: 65.6</p>
+            </div>
+          </li>
+          <li>
+            <div class="date">2023</div>
+            <div class="content">
+              <h3>DEGREE</h3>
+              <p>SJB INSTITUTE OF TECHNOLOGY</p>
+              <p>CGPA: 7.70</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="section" id="projects">
+      <h2>PROJECTS</h2>
+      <div class="details">
+        <ul class="timeline">
+          <li>
+            
+            <div class="content">
+              <h3>Fingerprint Based Car Ignition System</h3>
+              <p class="description">The biometric ignition system is designed to give the vehicle ahigh level of security and protection. Only an approved user fingerprint and anRFID card that is programmed to ignite the car will control the ignition circuit.</p>
+            </div>
+          </li>
+          <li>
+            
+            <div class="content">
+              
+                     
+                        <h3>Task Management Application</h3>
+                        <p class="description">Developed a web-based task management application using Java. The application allows users to create, assign, and track tasks within a team or organization.</p>
+                        <p class="description">Key features of the project include:</p>
+                        <ul>
+                          <li>Ability to create and assign tasks to team members, set due dates, and track task progress.</li>
+                          
+                        </ul>
+                        
+                      </div>
+                      <div class="content">
+              <li>
+                     
+                        <h3>Electronic Warfare System Using CockPit White Box</h3>
+                        <p class="description">In this project I have designed an embedded system which is usedfor tracking and positioning of any aircraft by using global positioning system(GPS) and global system for mobile commmunication (GSM)</p>
+                        
+                    </li>
+                    
+                  </ul>
+                  
+                      
+                    </ul>
+                    
+                </div>
+              </div>
+             
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+              
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="section">
+      <h1 class="contact">CONTACT</h2>
+      <div class="details">
+        <p>Phone: 8150882316</p>
+        <p>Email: saiv71012@gmail.com</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript code for interactivity
+    const sections = document.querySelectorAll('.section');
+
+    sections.forEach(section => {
+      section.addEventListener('click', () => {
+        section.classList.toggle('active');
+      });
+    });
+  </script>
+</body>
+</html>
